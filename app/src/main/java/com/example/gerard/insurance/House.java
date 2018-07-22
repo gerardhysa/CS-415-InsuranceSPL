@@ -10,7 +10,6 @@ public class House extends AppCompatActivity {
     int floors;
     int area;
 
-
     public House(int id){
 
         this.houseId = id;
@@ -20,7 +19,6 @@ public class House extends AppCompatActivity {
         return houseId;
     }
 
-
     public int getFloors(){
         return floors;
     }
@@ -28,9 +26,4 @@ public class House extends AppCompatActivity {
     public int getArea(){
         return area;
     }
-
-
-
-
-
 }

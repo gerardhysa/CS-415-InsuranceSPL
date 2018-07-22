@@ -6,8 +6,8 @@ public class SpouseInformation extends Information {
 
     String gender;
     Date birth;
-
-
+    String spouse_name;
+    String spouse_surname;
 
     public SpouseInformation(){
          gender = null;
@@ -18,7 +18,6 @@ public class SpouseInformation extends Information {
 
         this.gender = gender;
         this.birth = birth;
-
     }
 
     public Date getBirth() {
@@ -33,10 +32,7 @@ public class SpouseInformation extends Information {
         gender = gender;
     }
 
-
     public  void setDate(Date date){
         date = date;
     }
-
-
 }
