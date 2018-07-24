@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter Weight"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight_input"
+        android:layout_alignStart="@+id/weight_input"
+        android:layout_below="@+id/weight_input"
+        android:layout_marginTop="14dp"
+        android:text="Height" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/height"
+        android:layout_alignStart="@+id/height"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter Height"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bmi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height_input"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate BMI" />
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/bmi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/height_input"
+        android:layout_alignStart="@+id/height_input"
+        android:layout_below="@+id/bmi"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text=""
+        tools:text="Metric BMI Formula Weight \n (kg) / Height (m)2\n
+        Classification\nless than 18.5:  underweight\n
+                    18.5 - 24.9:  normal weight\n25 - 29.9:  overweight\n
+                    30 - 34.9:  class I obese\n35 - 39.9:  class II obese\n
+                    40 upwards:  class III obese" />
+
+</RelativeLayout>
