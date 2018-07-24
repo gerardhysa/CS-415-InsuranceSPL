@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent myIntent = new Intent(MainActivity.this, Information.class);
+                myIntent.putExtra("button", view.getId());
+                MainActivity.this.startActivity(myIntent);
+
 
             }
         });
@@ -31,49 +35,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+                Intent myIntent = new Intent(MainActivity.this, Information.class);
+                myIntent.putExtra("button", view.getId());
+                MainActivity.this.startActivity(myIntent);
+
             }
         });
 
         houseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Information info = new Information(R.id.houseBtn);
-                //info.checkID();
-
-                System.out.println(info.getId());
-
 
                 Intent myIntent = new Intent(MainActivity.this, Information.class);
+                myIntent.putExtra("button", view.getId());
                 MainActivity.this.startActivity(myIntent);
 
-
-                // final House house = new House(R.id.houseBtn);
-
-                //
-                //  submit_button.setOnClickListener( new View.OnClickListener(){
-
-                // private TextView name, surname,gender;
-
-                //   @Override
-                //  public void onClick(View view) {
-                //       setContentView(R.layout.test);
-
-
-
-                      /* String name_info =  info.getName();
-                       String surname_info = info.getSurname();
-
-                        name.setText(name_info);
-
-                        surname.setText(surname_info);*/
-                // }
-                // });
-                // setContentView(R.layout.house);
-
-                // });
-
-
-                //});
 
             }
         });
