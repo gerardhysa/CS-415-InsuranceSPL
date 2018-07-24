@@ -23,10 +23,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent myIntent = new Intent(MainActivity.this, Information.class);
+                Intent myIntent = new Intent(MainActivity.this, NavigationActivity.class);
                 myIntent.putExtra("button", view.getId());
                 MainActivity.this.startActivity(myIntent);
-
 
             }
         });
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent myIntent = new Intent(MainActivity.this, Information.class);
+                Intent myIntent = new Intent(MainActivity.this, NavigationActivity.class);
                 myIntent.putExtra("button", view.getId());
                 MainActivity.this.startActivity(myIntent);
 
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent myIntent = new Intent(MainActivity.this, Information.class);
+                Intent myIntent = new Intent(MainActivity.this, NavigationActivity.class);
                 myIntent.putExtra("button", view.getId());
                 MainActivity.this.startActivity(myIntent);
 

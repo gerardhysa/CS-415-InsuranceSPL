@@ -1,14 +1,11 @@
 package com.example.gerard.insurance;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class Information extends AppCompatActivity {
 
@@ -36,9 +33,25 @@ public class Information extends AppCompatActivity {
         int id = mIntent.getIntExtra("button", 0);
 
         if (id == R.id.houseBtn) {
-            setContentView(R.layout.house);
 
+            //setContentView(R.layout.activity_navigation);
+
+            setContentView(R.layout.personal_info);
             Button submit_button = (Button) findViewById(R.id.submit_button);
+
+            submit_button.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+
+                    Intent myIntent = new Intent(Information.this, House.class);
+                    //myIntent.putExtra("button", view.getId());
+                    Information.this.startActivity(myIntent);
+
+                }
+            });
+
+           /* Button submit_button = (Button) findViewById(R.id.submit_button);
 
             submit_button.setOnClickListener(new View.OnClickListener() {
 
@@ -73,9 +86,9 @@ public class Information extends AppCompatActivity {
                     //spouse.setDate();
 
                 }
-            });
+            });*/
         }else if(id == R.id.carBtn){
-            setContentView(R.layout.car_personal_info);
+            setContentView(R.layout.personal_info);
 
             Button submit_button = (Button) findViewById(R.id.submit_button);
 
@@ -92,7 +105,21 @@ public class Information extends AppCompatActivity {
                 }
             });
         }else if(id == R.id.healthBtn){
-            setContentView(R.layout.car_personal_info);
+
+            setContentView(R.layout.personal_info);
+            Button submit_button = (Button) findViewById(R.id.submit_button);
+
+            submit_button.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+
+                    Intent myIntent = new Intent(Information.this, Health.class);
+                    //myIntent.putExtra("button", view.getId());
+                    Information.this.startActivity(myIntent);
+
+                }
+            });
         }
     }
 

@@ -55,7 +55,7 @@ public class Car_Info extends AppCompatActivity implements AlertDialogRadio.Aler
             };
 
             /** Getting the reference of the button from the main layout */
-            Button btn = (Button) findViewById(R.id.prcdBtn);
+            Button btn = (Button) findViewById(R.id.pay_crypto_button);
 
             /** Setting a button click listener for the choose button */
             btn.setOnClickListener(listener);
