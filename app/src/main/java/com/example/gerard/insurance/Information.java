@@ -115,7 +115,7 @@ public class Information extends AppCompatActivity {
                 public void onClick(View view) {
 
                     Intent myIntent = new Intent(Information.this, Health.class);
-                    //myIntent.putExtra("button", view.getId());
+                    myIntent.putExtra("button", R.id.healthBtn);
                     Information.this.startActivity(myIntent);
 
                 }
