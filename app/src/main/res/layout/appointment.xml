@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true" />
 
     <EditText
-        android:id="@+id/type_of_doctor"
+        android:id="@+id/type_of_appointment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/datePicker"
@@ -24,25 +24,25 @@
         android:layout_below="@+id/datePicker"
         android:layout_marginTop="13dp"
         android:ems="10"
-        android:hint="Enter which doctor you want to see"
+        android:hint="Enter Reason of Appointment"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/time_doctor"
+        android:id="@+id/time_appointment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/type_of_doctor"
-        android:layout_alignStart="@+id/type_of_doctor"
-        android:layout_below="@+id/type_of_doctor"
+        android:layout_alignLeft="@+id/type_of_appointment"
+        android:layout_alignStart="@+id/type_of_appointment"
+        android:layout_below="@+id/type_of_appointment"
         android:ems="10"
         android:hint="Enter time of appointment"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/doctor_btn"
+        android:id="@+id/appointment_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/time_doctor"
+        android:layout_below="@+id/time_appointment"
         android:layout_centerHorizontal="true"
         android:text="Arrange Appointment" />
 </RelativeLayout>

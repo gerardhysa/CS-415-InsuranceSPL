@@ -37,8 +37,6 @@ public class NavigationActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -49,33 +47,75 @@ public class NavigationActivity extends AppCompatActivity
 
         ImageView iv = (ImageView) findViewById(R.id.img_nav);
 
-        if (id == R.id.houseBtn) {
+        // find MenuItem you want to change
+        MenuItem nav_camera = menu.findItem(R.id.nav_camera);
+        MenuItem nav_gallery = menu.findItem(R.id.nav_gallery);
+        MenuItem nav_slideshow = menu.findItem(R.id.nav_slideshow);
+        MenuItem nav_share = menu.findItem(R.id.nav_share);
+        MenuItem nav_send = menu.findItem(R.id.nav_send);
+        MenuItem nav_extra = menu.findItem(R.id.nav_extra);
 
-            // find MenuItem you want to change
-            MenuItem nav_camera = menu.findItem(R.id.nav_camera);
+        if (id == R.id.houseBtn) {
 
             // set new title to the MenuItem
             nav_camera.setTitle("Buy Insurance");
             iv.setImageResource(R.mipmap.house_image);
 
-        }else if(id == R.id.carBtn){
+            // set new title to the MenuItem
+            nav_gallery.setTitle("Camera Monitoring");
 
-            MenuItem nav_camera = menu.findItem(R.id.nav_camera);
+            // set new title to the MenuItem
+            nav_slideshow.setTitle("ddd");
+
+                       // set new title to the MenuItem
+            nav_share.setTitle("Security Office Appointment");
+
+            // set new title to the MenuItem
+            nav_send.setTitle("Insurance Company Appointment");
+
+            // hide
+            nav_extra.setVisible(false);
+
+        }else if(id == R.id.carBtn){
 
             // set new title to the MenuItem
             nav_camera.setTitle("Buy Insurance");
 
+            // set new title to the MenuItem
+            nav_gallery.setTitle("Mileage Tracker");
+
+            // set new title to the MenuItem
+            nav_slideshow.setTitle("Maintenance Tracker");
+
+            // set new title to the MenuItem
+            nav_share.setTitle("Mechanic Appointment");
+
+            // set new title to the MenuItem
+            nav_send.setTitle("Insurance Company Appointment");
+
+            // hide
+            nav_extra.setVisible(false);
 
         }else if(id == R.id.healthBtn){
 
-            MenuItem nav_camera = menu.findItem(R.id.nav_camera);
-
             // set new title to the MenuItem
             nav_camera.setTitle("Buy Insurance");
 
+            // set new title to the MenuItem
+            nav_gallery.setTitle("Calculate BMI");
+
+            // set new title to the MenuItem
+            nav_slideshow.setTitle("Daily Calorie Intake");
+
+            // set new title to the MenuItem
+            nav_extra.setTitle("Medication Timetable");
+
+            // set new title to the MenuItem
+            nav_share.setTitle("Doctor Appointment");
+
+            // set new title to the MenuItem
+            nav_send.setTitle("Insurance Company Appointment");
         }
-
-
     }
 
     @Override
@@ -131,10 +171,27 @@ public class NavigationActivity extends AppCompatActivity
             Intent i = new Intent(NavigationActivity.this, Information.class);
             i.putExtra("button", R.id.houseBtn);
             startActivity(i);
-        } else if (id_navigation == R.id.nav_share) {
-
+        } else if (id_navigation == R.id.nav_gallery && id == R.id.healthBtn) {
+            Intent i = new Intent(NavigationActivity.this, Health_Complications.class);
+            i.putExtra("health", R.id.nav_gallery);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_slideshow && id == R.id.healthBtn) {
+            Intent i = new Intent(NavigationActivity.this, Health_Complications.class);
+            i.putExtra("health", R.id.nav_slideshow);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_extra && id == R.id.healthBtn) {
+            Intent i = new Intent(NavigationActivity.this, Health_Complications.class);
+            i.putExtra("health", R.id.nav_extra);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_share && id == R.id.healthBtn) {
+            Intent i = new Intent(NavigationActivity.this, Appointment.class);
+            i.putExtra("appointment", R.id.nav_share);
+            i.putExtra("button", R.id.healthBtn);
+            startActivity(i);
         } else if (id_navigation == R.id.nav_send) {
-
+            Intent i = new Intent(NavigationActivity.this, Appointment.class);
+            i.putExtra("appointment", R.id.nav_send);
+            startActivity(i);
         } else if (id_navigation == R.id.action_settings) {
 
         }
