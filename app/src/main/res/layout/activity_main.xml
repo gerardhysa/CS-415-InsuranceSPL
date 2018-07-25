@@ -60,7 +60,7 @@
         android:layout_marginRight="87dp"
         android:layout_marginStart="87dp"
         android:layout_marginTop="31dp"
-        android:text="TextView"
+        android:text="Choose the Insurance"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

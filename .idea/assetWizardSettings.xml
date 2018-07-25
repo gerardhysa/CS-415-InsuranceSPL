@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="47" />
+                                                <entry key="scalingPercent" value="107" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -34,9 +34,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Gerard\Desktop\y0z3u_JQ_400x400.png" />
+                                      <entry key="foregroundImage" value="C:\Users\Gerard\Desktop\house-and-contents-insurance_smaller.jpg" />
                                       <entry key="foregroundLayerName" value="house_image_set" />
-                                      <entry key="outputName" value="house_image" />
+                                      <entry key="outputName" value="house_image_new" />
+                                      <entry key="previewDensity" value="XXXHIGH" />
                                     </map>
                                   </option>
                                 </PersistentState>

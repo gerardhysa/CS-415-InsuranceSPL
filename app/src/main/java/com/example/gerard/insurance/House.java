@@ -22,7 +22,7 @@ public class House extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.house_activity);
 
-        Button btn1 = findViewById(R.id.pay_crypto_button);
+        Button btn1 = (Button) findViewById(R.id.pay_crypto_button);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

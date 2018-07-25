@@ -3,6 +3,7 @@ package com.example.gerard.insurance;
 import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -45,6 +46,8 @@ public class NavigationActivity extends AppCompatActivity
 
         Menu menu = navigationView.getMenu();
 
+
+
         ImageView iv = (ImageView) findViewById(R.id.img_nav);
 
         // find MenuItem you want to change
@@ -59,7 +62,9 @@ public class NavigationActivity extends AppCompatActivity
 
             // set new title to the MenuItem
             nav_camera.setTitle("Buy Insurance");
-            iv.setImageResource(R.mipmap.house_image);
+
+            //drawer.setBackgroundResource(R.mipmap.house_image_new);
+            iv.setImageResource(R.mipmap.house_image_new);
 
             // set new title to the MenuItem
             nav_gallery.setTitle("Camera Monitoring");
@@ -168,9 +173,11 @@ public class NavigationActivity extends AppCompatActivity
             i.putExtra("button", R.id.carBtn);
             startActivity(i);
         } else if (id_navigation == R.id.nav_camera && id == R.id.houseBtn) {
+
             Intent i = new Intent(NavigationActivity.this, Information.class);
             i.putExtra("button", R.id.houseBtn);
             startActivity(i);
+
         } else if (id_navigation == R.id.nav_gallery && id == R.id.healthBtn) {
             Intent i = new Intent(NavigationActivity.this, Health_Complications.class);
             i.putExtra("health", R.id.nav_gallery);

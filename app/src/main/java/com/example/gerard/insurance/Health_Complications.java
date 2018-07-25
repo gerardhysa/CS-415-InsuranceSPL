@@ -46,19 +46,9 @@ public class Health_Complications extends AppCompatActivity {
                 }
             });
         }else if (id == R.id.nav_extra){
-        setContentView(R.layout.medication_timetable);
-        Button submit_button = (Button) findViewById(R.id.medication_btn);
-
-        submit_button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-
-                //Intent myIntent = new Intent(Information.this, House.class);
-                //myIntent.putExtra("button", view.getId());
-                //Information.this.startActivity(myIntent);
-                }
-            });
+        //setContentView(R.layout.medication_timetable);
+            Intent i = new Intent(Health_Complications.this, Alarm.class);
+            startActivity(i);
         }
     }
 }

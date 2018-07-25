@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/img_nav"
-            android:layout_width="300dp"
-            android:layout_height="300dp" />
+            android:layout_width="match_parent"
+            android:layout_height="447dp" />
 
 
     </android.support.design.widget.AppBarLayout>
