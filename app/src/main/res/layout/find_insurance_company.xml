@@ -3,18 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Credit_Card">
+    android:layout_height="match_parent">
 
     <RadioGroup
         android:id="@+id/radioGroup3"
-        android:layout_width="256dp"
-        android:layout_height="79dp"
+        android:layout_width="355dp"
+        android:layout_height="351dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,18 +19,46 @@
         app:layout_constraintVertical_bias="0.135">
 
         <RadioButton
-            android:id="@+id/cardBtn"
-            android:layout_width="wrap_content"
+            android:id="@+id/ins1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Credit Card" />
+            android:text="Default Insurance Company 1" />
 
         <RadioButton
-            android:id="@+id/btcBtn"
-            android:layout_width="wrap_content"
+            android:id="@+id/ins2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Bitcoin" />
+            android:text="Default Insurance Company 2" />
+
+        <RadioButton
+            android:id="@+id/ins3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Insurance Company 3" />
+
+        <RadioButton
+            android:id="@+id/ins4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Insurance Company 4" />
+
+        <RadioButton
+            android:id="@+id/ins5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Insurance Company 5" />
+
+        <RadioButton
+            android:id="@+id/ins6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Default Insurance Company 6" />
     </RadioGroup>
 
     <TextView
@@ -48,7 +71,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Choose payment type."
+        android:text="Choose Insurance Company"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -57,13 +80,13 @@
         app:layout_constraintVertical_bias="0.015" />
 
     <Button
-        android:id="@+id/proceedBtn"
+        android:id="@+id/selectBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="52dp"
-        android:text="PROCEED"
+        android:text="Select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />

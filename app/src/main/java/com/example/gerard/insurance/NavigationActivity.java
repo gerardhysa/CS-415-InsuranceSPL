@@ -197,6 +197,16 @@ public class NavigationActivity extends AppCompatActivity
             i.putExtra("monitor", R.id.nav_slideshow);
             i.putExtra("button", R.id.houseBtn);
             startActivity(i);
+        } else if (id_navigation == R.id.nav_share && id == R.id.carBtn) {
+            Intent i = new Intent(NavigationActivity.this, Appointment.class);
+            i.putExtra("appointment", R.id.nav_share);
+            i.putExtra("button", R.id.carBtn);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_share && id == R.id.houseBtn) {
+            Intent i = new Intent(NavigationActivity.this, Appointment.class);
+            i.putExtra("appointment", R.id.nav_share);
+            i.putExtra("button", R.id.houseBtn);
+            startActivity(i);
         } else if (id_navigation == R.id.nav_send) {
             Intent i = new Intent(NavigationActivity.this, Appointment.class);
             i.putExtra("appointment", R.id.nav_send);

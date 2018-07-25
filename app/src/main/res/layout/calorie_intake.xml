@@ -15,8 +15,8 @@
         android:layout_below="@+id/calorie"
         android:layout_marginTop="39dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter food" />
+        android:hint="Enter food"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/calorie"
