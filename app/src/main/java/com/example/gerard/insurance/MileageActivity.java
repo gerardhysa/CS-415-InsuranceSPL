@@ -1,4 +1,4 @@
-package com.example.massiveogre.insuranceapp;
+package com.example.gerard.insurance;
 
 import android.os.Bundle;
 import android.app.Activity;

@@ -49,6 +49,13 @@
         </activity>
         <activity android:name=".Alarm">
         </activity>
+
+        <activity android:name=".MaintenanceActivity">
+        </activity>
+
+        <activity android:name=".MileageActivity">
+        </activity>
+
         <receiver android:name=".AlarmReceiver" />
 
         <service android:name=".RingtonePlayingService"

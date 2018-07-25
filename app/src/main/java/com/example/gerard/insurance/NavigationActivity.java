@@ -207,6 +207,16 @@ public class NavigationActivity extends AppCompatActivity
             i.putExtra("appointment", R.id.nav_share);
             i.putExtra("button", R.id.houseBtn);
             startActivity(i);
+        } else if (id_navigation == R.id.nav_gallery && id == R.id.carBtn) {
+            Intent i = new Intent(NavigationActivity.this, MileageActivity.class);
+            i.putExtra("appointment", R.id.nav_gallery);
+            i.putExtra("button", R.id.carBtn);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_slideshow && id == R.id.carBtn) {
+            Intent i = new Intent(NavigationActivity.this, MaintenanceActivity.class);
+            i.putExtra("appointment", R.id.nav_slideshow);
+            i.putExtra("button", R.id.carBtn);
+            startActivity(i);
         } else if (id_navigation == R.id.nav_send) {
             Intent i = new Intent(NavigationActivity.this, Appointment.class);
             i.putExtra("appointment", R.id.nav_send);
