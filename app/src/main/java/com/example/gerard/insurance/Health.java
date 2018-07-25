@@ -39,23 +39,33 @@ public class Health extends AppCompatActivity implements AlertDialogRadio.AlertP
             @Override
             public void onClick(View v) {
 
-                /** Getting the fragment manager */
-                FragmentManager manager = getFragmentManager();
+                setContentView(R.layout.find_insurance_company);
+                Button choose_company = (Button) findViewById(R.id.selectBtn);
 
-                /** Instantiating the DialogFragment class */
-                AlertDialogRadio alert = new AlertDialogRadio();
+                choose_company.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        /** Getting the fragment manager */
+                        FragmentManager manager = getFragmentManager();
 
-                /** Creating a bundle object to store the selected item's index */
-                Bundle b = new Bundle();
+                        /** Instantiating the DialogFragment class */
+                        AlertDialogRadio alert = new AlertDialogRadio();
 
-                /** Storing the selected item's index in the bundle object */
-                b.putInt("position", position);
+                        /** Creating a bundle object to store the selected item's index */
+                        Bundle b = new Bundle();
 
-                /** Setting the bundle object to the dialog fragment object */
-                alert.setArguments(b);
+                        /** Storing the selected item's index in the bundle object */
+                        b.putInt("position", position);
 
-                /** Creating the dialog fragment object, which will in turn open the alert dialog window */
-                alert.show(manager, "alert_dialog_radio");
+                        /** Setting the bundle object to the dialog fragment object */
+                        alert.setArguments(b);
+
+                        /** Creating the dialog fragment object, which will in turn open the alert dialog window */
+                        alert.show(manager, "alert_dialog_radio");
+                    }
+                });
+
+
             }
         };
 

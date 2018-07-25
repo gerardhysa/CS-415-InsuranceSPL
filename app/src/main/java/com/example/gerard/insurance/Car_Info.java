@@ -33,24 +33,31 @@ public class Car_Info extends AppCompatActivity implements AlertDialogRadio.Aler
             View.OnClickListener listener = new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    setContentView(R.layout.find_insurance_company);
+                    Button choose_company = (Button) findViewById(R.id.selectBtn);
 
-                    /** Getting the fragment manager */
-                    FragmentManager manager = getFragmentManager();
+                    choose_company.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            /** Getting the fragment manager */
+                            FragmentManager manager = getFragmentManager();
 
-                    /** Instantiating the DialogFragment class */
-                    AlertDialogRadio alert = new AlertDialogRadio();
+                            /** Instantiating the DialogFragment class */
+                            AlertDialogRadio alert = new AlertDialogRadio();
 
-                    /** Creating a bundle object to store the selected item's index */
-                    Bundle b  = new Bundle();
+                            /** Creating a bundle object to store the selected item's index */
+                            Bundle b = new Bundle();
 
-                    /** Storing the selected item's index in the bundle object */
-                    b.putInt("position", position);
+                            /** Storing the selected item's index in the bundle object */
+                            b.putInt("position", position);
 
-                    /** Setting the bundle object to the dialog fragment object */
-                    alert.setArguments(b);
+                            /** Setting the bundle object to the dialog fragment object */
+                            alert.setArguments(b);
 
-                    /** Creating the dialog fragment object, which will in turn open the alert dialog window */
-                    alert.show(manager, "alert_dialog_radio");
+                            /** Creating the dialog fragment object, which will in turn open the alert dialog window */
+                            alert.show(manager, "alert_dialog_radio");
+                        }
+                    });
                 }
             };
 
