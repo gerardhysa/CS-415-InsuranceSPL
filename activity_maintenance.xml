@@ -1,0 +1,167 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MaintenanceActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Maintenance Panel"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/grgInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="305dp"
+            android:layout_height="23dp"
+            android:text="Last Service Date \u0009 \u0009 7/26/2018"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="305dp"
+            android:layout_height="20dp"
+            android:text="Air Filter \u0009 \u0009 Overdue by 2,876 miles"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Spark Plugs \u0009 \u0009 due in 32,000 miles or 15 days"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="305dp"
+            android:layout_height="21dp"
+            android:text="Tire Rotation \u0009 \u0009 Overdue by 30,345 miles"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="305dp"
+            android:layout_height="24dp"
+            android:text="Oil Change \u0009 \u0009  Due in 450 miles"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/laundryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gas Log"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000000" />
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="278dp"
+            android:layout_height="20dp"
+            android:text="Last FillUp \u0009 \u0009 78.92 MPG \u0009 7/26/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="160dp"
+            android:layout_height="24dp"
+            android:text="Average \u0009 \u0009 56.89 MPG" />
+        <TextView
+            android:id="@+id/kitchenInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repairs"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="360dp"
+            android:layout_height="17dp"
+            android:text="Radiator replaced at 171,000 miles on 7/26/2018"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="363dp"
+            android:layout_height="41dp"
+            android:text="Exhaust muffler and pipes replaced at 171,000 miles on 7/26/2018" />
+        <TextView
+            android:id="@+id/masterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Info"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000000" />
+        <TextView
+            android:id="@+id/textView313"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="Color \u0009 \u0009 RED"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView311"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="Manufacturer \u0009 \u0009 Ford"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView312"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="Model \u0009 \u0009 Mustang"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="Year \u0009 \u0009 1999"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="VIN number \u0009 \u0009 ujnabcd876787"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="317dp"
+            android:layout_height="19dp"
+            android:text="Licence plate number \u0009 \u0009 AA1998OUIJA" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="317dp"
+            android:layout_height="23dp"
+            android:text="Insurance Policy \u0009 \u0009 9995-123-222-1123" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
