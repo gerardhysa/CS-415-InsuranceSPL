@@ -1,0 +1,105 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MileageActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Mileage Tracker"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tripInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All trips"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#000000" />
+        <TextView
+            android:id="@+id/textView212"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="5 Trips"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView201"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="175.2 miles \u0009 $76.43 \u0009 6/26/2018 - 7/26/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView213"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="2 Trips"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView204"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="43.2 miles \u0009 $11.2 \u0009 4/21/2018 - 6/2/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView211"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="7 Trips"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView209"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="300.42 miles \u0009 $140.89 \u0009 3/26/2018 - 5/1/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="1 Trip"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="10.2 miles \u0009 $6.50 \u0009 3/22/2018 - 4/21/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="10 Trips"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="100.78 miles \u0009 $65.75 \u0009 2/2/2018 - 3/4/2018"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="3 Trips"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="339dp"
+            android:layout_height="22dp"
+            android:text="25.2 miles \u0009 $15.50 \u0009 1/30/2018 - 2/20/2018"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
