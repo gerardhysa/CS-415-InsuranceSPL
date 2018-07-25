@@ -65,7 +65,7 @@ public class NavigationActivity extends AppCompatActivity
             nav_gallery.setTitle("Camera Monitoring");
 
             // set new title to the MenuItem
-            nav_slideshow.setTitle("ddd");
+            nav_slideshow.setTitle("Door/Window/Leakage/Temperature");
 
                        // set new title to the MenuItem
             nav_share.setTitle("Security Office Appointment");
@@ -187,6 +187,16 @@ public class NavigationActivity extends AppCompatActivity
             Intent i = new Intent(NavigationActivity.this, Appointment.class);
             i.putExtra("appointment", R.id.nav_share);
             i.putExtra("button", R.id.healthBtn);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_gallery && id == R.id.houseBtn) {
+            Intent i = new Intent(NavigationActivity.this, CameraListActivity.class);
+            i.putExtra("monitor", R.id.nav_gallery);
+            i.putExtra("button", R.id.houseBtn);
+            startActivity(i);
+        } else if (id_navigation == R.id.nav_slideshow && id == R.id.houseBtn) {
+            Intent i = new Intent(NavigationActivity.this, Monitor.class);
+            i.putExtra("monitor", R.id.nav_slideshow);
+            i.putExtra("button", R.id.houseBtn);
             startActivity(i);
         } else if (id_navigation == R.id.nav_send) {
             Intent i = new Intent(NavigationActivity.this, Appointment.class);
