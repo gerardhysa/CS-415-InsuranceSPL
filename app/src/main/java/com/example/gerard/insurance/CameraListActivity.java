@@ -1,4 +1,5 @@
-package com.example.massiveogre.insuranceapp;
+package com.example.gerard.insurance;
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.massiveogre.insuranceapp.dummy.DummyContent;
+import com.example.gerard.insurance.DummyContent;
 
 import java.util.List;
 

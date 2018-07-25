@@ -1,4 +1,5 @@
-package com.example.massiveogre.insuranceapp;
+package com.example.gerard.insurance;
+
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;

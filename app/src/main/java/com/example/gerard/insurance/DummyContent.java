@@ -1,4 +1,5 @@
-package com.example.massiveogre.insuranceapp.dummy;
+package com.example.gerard.insurance;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;

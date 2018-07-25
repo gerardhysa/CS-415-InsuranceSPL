@@ -1,4 +1,4 @@
-package com.example.massiveogre.insuranceapp;
+package com.example.gerard.insurance;
 
 import android.os.Bundle;
 import android.app.Fragment;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-import com.example.massiveogre.insuranceapp.dummy.DummyContent;
+import com.example.gerard.insurance.DummyContent;
 
 /**
  * A fragment representing a single Camera detail screen.
