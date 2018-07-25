@@ -17,7 +17,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="31dp"
-        android:text="Weight" />
+        android:text="Weight (kg)" />
 
     <EditText
         android:id="@+id/weight_input"
@@ -29,7 +29,7 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Enter Weight"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/height"
@@ -39,7 +39,7 @@
         android:layout_alignStart="@+id/weight_input"
         android:layout_below="@+id/weight_input"
         android:layout_marginTop="14dp"
-        android:text="Height" />
+        android:text="Height (m)" />
 
     <EditText
         android:id="@+id/height_input"
@@ -51,7 +51,7 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Enter Height"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/bmi_btn"
@@ -80,7 +80,8 @@
         android:ems="10"
         android:inputType="textMultiLine"
         android:text=""
-        tools:text="Metric BMI Formula Weight \n (kg) / Height (m)2\n
+        android:visibility="visible"
+        tools:text="Metric BMI Formula Weight(kg) / Height(m)2\n
         Classification\nless than 18.5:  underweight\n
                     18.5 - 24.9:  normal weight\n25 - 29.9:  overweight\n
                     30 - 34.9:  class I obese\n35 - 39.9:  class II obese\n
