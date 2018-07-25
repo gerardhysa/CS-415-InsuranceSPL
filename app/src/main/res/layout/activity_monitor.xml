@@ -1,0 +1,194 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MonitorActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Monitor Panel"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/grgInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Garage"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Garage Door \u0009 \u0009 Closed"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Open"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/laundryInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laundry"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="224dp"
+                android:layout_height="23dp"
+                android:text="General Water Leak \u0009 \u0009  None"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Closed" />
+            <TextView
+                android:id="@+id/kitchenInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="224dp"
+                android:layout_height="23dp"
+                android:text="General Water Leak \u0009 \u0009  None"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Closed" />
+            <TextView
+                android:id="@+id/masterInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Master Bedroom"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Closed" />
+            <TextView
+                android:id="@+id/babyroomInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baby Bedroom"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Closed" />
+            <TextView
+                android:id="@+id/guestroomInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guest Bedroom"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Temperature \u0009 \u0009 90 F"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Windows \u0009 \u0009 Closed" />
+            <TextView
+                android:id="@+id/safeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gun Safe"
+                android:textSize="25sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:text="Lock Info \u0009 \u0009 Unlocked"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+

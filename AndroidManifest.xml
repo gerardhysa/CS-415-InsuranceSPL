@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.massiveogre.insuranceapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CarActivity" />
+        <activity android:name=".HouseActivity" />
+        <activity android:name=".HealthActivity" />
+        <activity android:name=".CardActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".BtcActivity" />
+        <activity android:name=".OffersActivity" />
+        <activity android:name=".MonitorActivity" />
+        <activity
+            android:name=".CameraListActivity"
+            android:label="@string/title_camera_list"></activity>
+        <activity
+            android:name=".CameraDetailActivity"
+            android:label="@string/title_camera_detail"
+            android:parentActivityName=".CameraListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.massiveogre.insuranceapp.CameraListActivity" />
+        </activity>
+    </application>
+
+</manifest>
